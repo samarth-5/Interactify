@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "322378095731",
+    "project_id": "interactify-cfccf",
+    "storage_bucket": "interactify-cfccf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:322378095731:android:57d87ff90267fc9f891e06",
+        "android_client_info": {
+          "package_name": "com.example.interactify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "322378095731-hn00ir3ncbknvnuuie6f6geq1ssd0d64.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.interactify",
+            "certificate_hash": "ac8505480160a80cc64dd9885707caad963260f9"
+          }
+        },
+        {
+          "client_id": "322378095731-6hm96v7ubqcr5ijnpqucc9bpk80njad6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-qgDkNWfynEWkstJKevkQh-WDaLy08zU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "322378095731-6hm96v7ubqcr5ijnpqucc9bpk80njad6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
