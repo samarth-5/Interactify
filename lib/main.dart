@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:interactify/screens/login_screen.dart';
 import 'package:interactify/utils/colors.dart';
 
 void main() {
@@ -11,11 +12,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Interactify',
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: backgroundColor
       ),
-      home: const Text('Hello World'),
+      routes: {
+        '/login': (context) => const LoginScreen(),
+      },
+      home: const LoginScreen(),
     );
   }
 }
