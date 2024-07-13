@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:interactify/resources/auth_methods.dart';
 import 'package:interactify/widgets/custom_button.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -9,6 +10,7 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
+  final AuthMethods _authMethods = AuthMethods();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,7 +29,16 @@ class _LoginScreenState extends State<LoginScreen> {
               padding: const EdgeInsets.symmetric(vertical: 38.0),
               child: Image.asset('assets/onboarding.jpg'),
             ),
-            CustomButton(text: 'Continue with Google', onPressed: (){},),
+            CustomButton(
+              text: 'Continue with Google',
+              onPressed: () async {
+                bool res = await _authMethods.signInWithGoogle(context);
+                if(res)
+                {
+                  Navigator.pushNamed(context, '/home');
+                }
+              },
+            ),
           ],
         ),
       ),
