@@ -32,7 +32,7 @@ class MeetingsScreen extends StatelessWidget {
               icon: Icons.videocam,
             ),
             HomeMeetingButton(
-              onPressed: joinMeeting(context),
+              onPressed: () => joinMeeting(context),
               text: 'Join Meeting',
               icon: Icons.add_box_rounded,
             ),

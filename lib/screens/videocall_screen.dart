@@ -3,7 +3,6 @@ import 'package:interactify/resources/auth_methods.dart';
 import 'package:interactify/resources/jitsi_meet_methods.dart';
 import 'package:interactify/utils/colors.dart';
 import 'package:interactify/widgets/meeting_option.dart';
-import 'package:jitsi_meet_flutter_sdk/jitsi_meet_flutter_sdk.dart';
 
 class VideocallScreen extends StatefulWidget {
   const VideocallScreen({super.key});
