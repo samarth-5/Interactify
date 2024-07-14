@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:interactify/resources/auth_methods.dart';
 import 'package:interactify/screens/history_meeting_screen.dart';
 import 'package:interactify/screens/meetings_screen.dart';
 import 'package:interactify/utils/colors.dart';
+import 'package:interactify/widgets/custom_button.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -11,6 +13,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  
   int _page = 0;
   onPageChanged(int page) {
     setState(() {
@@ -22,7 +25,12 @@ class _HomeScreenState extends State<HomeScreen> {
     MeetingsScreen(),
     const HistoryMeetingScreen(),
     const Text('Contacts'),
-    const Text('Settings'),
+    Center(
+      child: CustomButton(
+        text: 'Log Out',
+        onPressed: () => AuthMethods().signOut(),
+      ),
+    ),
   ];
 
   @override
