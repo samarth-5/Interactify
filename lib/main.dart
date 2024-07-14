@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:interactify/resources/auth_methods.dart';
 import 'package:interactify/screens/home_screen.dart';
 import 'package:interactify/screens/login_screen.dart';
+import 'package:interactify/screens/videocall_screen.dart';
 import 'package:interactify/utils/colors.dart';
 
 void main() async{
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/login': (context) => const LoginScreen(),
         '/home': (context) => const HomeScreen(),
+        '/video-call': (context) => const VideocallScreen(),
       },
       //stream builder used for persisting state
       //for real time

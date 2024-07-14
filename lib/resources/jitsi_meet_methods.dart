@@ -4,9 +4,19 @@ import 'package:jitsi_meet_flutter_sdk/jitsi_meet_flutter_sdk.dart';
 class JitsiMeetMethods {
   final AuthMethods _authMethods = AuthMethods(); 
   
-  void createMeeting({required String roomName, required bool isAudioMuted, required isVideoMuted}) async{
+  void createMeeting({required String roomName, required bool isAudioMuted, required isVideoMuted, String username=''}) async{
     try{
       var jitsiMeet = JitsiMeet();
+
+      String name;
+      if(username.isEmpty)
+      {
+        name = _authMethods.user.displayName!;
+      }
+      else
+      {
+        name = username;
+      }
       //var options = JitsiMeetConferenceOptions(room: roomName);
       var options = JitsiMeetConferenceOptions(
       serverURL: "https://meet.jit.si",
