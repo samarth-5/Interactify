@@ -9,7 +9,7 @@ class JitsiMeetMethods {
   void createMeeting(
       {required String roomName,
       required bool isAudioMuted,
-      required isVideoMuted,
+      required bool isVideoMuted,
       String username = ''}) async {
     try {
       var jitsiMeet = JitsiMeet();
@@ -22,16 +22,16 @@ class JitsiMeetMethods {
       }
       //var options = JitsiMeetConferenceOptions(room: roomName);
       var options = JitsiMeetConferenceOptions(
-        serverURL: "https://meet.jit.si",
+        //serverURL: "https://meet.jit.si",
         room: roomName,
         configOverrides: {
           "startWithAudioMuted": isAudioMuted,
           "startWithVideoMuted": isVideoMuted,
-          "subject": "Jitsi with Flutter",
+          "subject": "Interactify",
         },
         featureFlags: {"unsaferoomwarning.enabled": false},
         userInfo: JitsiMeetUserInfo(
-          displayName: _authMethods.user.displayName,
+          displayName: name,
           email: _authMethods.user.email,
         ),
       );
