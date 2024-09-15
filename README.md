@@ -1,5 +1,9 @@
 # Interactify
 
+
+https://github.com/user-attachments/assets/fe031dfa-baf7-4eac-8406-c3e8102b8519
+
+
 **Interactify** is a user-friendly video calling app built with the Jitsi Meet Flutter library. It enables high-quality video conferencing and real-time chat, offering secure and instant meetings. With features like screen sharing, Interactify is perfect for seamless collaboration.
 
 ## Features
